@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIDDLE - FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #f0f0f0;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2a2a2a;
+            padding: 1em;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1em;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        main {
+            padding: 1em;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        .hero {
+            background: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg') no-repeat center center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-left: 20px;
+        }
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .faq-item {
+            background-color: #2a2a2a;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .faq-item h3 {
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .bullet-points {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .bullet-points div {
+            flex: 1;
+            min-width: 150px;
+        }
+        .cta {
+            background-color: #2a2a2a;
+            text-align: center;
+            padding: 2em;
+            border-radius: 10px;
+        }
+        .cta a {
+            color: #fff;
+            background-color: #e74c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2a2a2a;
+            text-align: center;
+            padding: 1em;
+        }
+        footer p {
+            margin: 0.5em 0;
+        }
+        @media (min-width: 768px) {
+            .bullet-points {
+                flex-wrap: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FIDDLE FAQ</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h1>Welcome to Our FAQ</h1>
+        </section>
+        <section class="about" id="about">
+            <h2>About GRTRWJ</h2>
+            <p>GRTRWJ stands as a beacon of innovation in retail, merging traditional shopping with cutting-edge technology. With a focus on customer satisfaction and bespoke solutions, we offer a shopping experience like no other. Our extensive range of services is designed to cater to the diverse needs of our clientele, ensuring every interaction is seamless and rewarding.</p>
+            <p>Rooted in a commitment to excellence, GRTRWJ is not just a retail store, but a destination where ideas meet craftsmanship. We strive to exceed expectations at every turn, bringing forth products that not only meet but anticipate the desires of our customers.</p>
+        </section>
+        <section class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> What is GRTRWJ's return policy?</h3>
+                <p>We offer a 30-day return policy on most items, ensuring you have ample time to decide if your purchase is right for you. For more details, please visit our return policy section.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-shipping-fast"></i> How fast is shipping?</h3>
+                <p>Standard shipping typically takes 3-5 business days, while express options are available for those in need of faster delivery.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-headset"></i> How can I contact customer support?</h3>
+                <p>Our customer support team is available 24/7. You can reach us via email, phone, or live chat through our website.</p>
+            </div>
+        </section>
+        <section class="bullet-points">
+            <div>
+                <h3>Our Commitments:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Quality Assurance</li>
+                    <li><i class="fas fa-check-circle"></i> Customer Satisfaction</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Our Services:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Customization</li>
+                    <li><i class="fas fa-check-circle"></i> Fast Shipping</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Why Choose Us:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Innovative Solutions</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+                </ul>
+            </div>
+        </section>
+        <section class="cta" id="contact">
+            <h2>Need More Help?</h2>
+            <p>Contact our support team for additional assistance.</p>
+            <a href="#">Contact Us</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FIDDLE</p>
+        <p>Email: support@grtrwj.com | Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
+
+Certainly! Below is the continuation with additional pages as requested.

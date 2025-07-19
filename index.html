@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIDDLE - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f0f0f0;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 1em;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        main {
+            padding: 1em;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1601597110392-c2238c2f2d99') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #1f1f1f;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .service-item h3 {
+            margin-top: 0;
+        }
+        .testimonials {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 1em;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 1em 0;
+        }
+        .gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+        .gallery img {
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .cta {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 2em;
+            border-radius: 10px;
+        }
+        .cta a {
+            color: #fff;
+            background-color: #f39c12;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1em;
+        }
+        footer p {
+            margin: 0.5em 0;
+        }
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1024px) {
+            .hero {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FIDDLE Services</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h1>Crafting Unique Retail Experiences</h1>
+        </section>
+        <section class="about" id="about">
+            <h2>About GRTRWJ</h2>
+            <p>GRTRWJ is a unique retail platform that combines innovation with traditional craftsmanship. We pride ourselves on delivering bespoke products that cater to the individuality of each customer. Established with a vision to redefine retail experiences, GRTRWJ offers a wide range of services, ensuring customer satisfaction at every step.</p>
+            <p>Our mission is to create memorable shopping experiences by integrating modern technology with classic retail principles. From curated selections to personalized services, our team is dedicated to bringing you the best in retail, tailored to your needs and preferences.</p>
+        </section>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3><i class="fas fa-box"></i> Product Customization</h3>
+                    <p>We offer tailored product customization to suit your unique style and preferences, ensuring every piece resonates with you.</p>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-shipping-fast"></i> Fast Delivery</h3>
+                    <p>Experience prompt and reliable delivery services, ensuring your purchases arrive at your doorstep with speed and care.</p>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-headset"></i> 24/7 Support</h3>
+                    <p>Our dedicated support team is available around the clock to assist you with any inquiries or concerns you may have.</p>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-sync-alt"></i> Easy Returns</h3>
+                    <p>Enjoy hassle-free returns and exchanges, designed to provide you with peace of mind when shopping with us.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <blockquote>"The customization options at GRTRWJ are unparalleled. I love how my purchase truly reflects my personal style!"</blockquote>
+                <p>- Sarah K.</p>
+            </div>
+            <div class="testimonial">
+                <blockquote>"Fast delivery and excellent customer service. GRTRWJ has set a new standard for online retail."</blockquote>
+                <p>- John D.</p>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://images.pexels.com/photos/731217/pexels-photo-731217.jpeg" alt="Showcase 1">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Showcase 2">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Showcase 3">
+        </section>
+        <section class="cta" id="contact">
+            <h2>Ready to Transform Your Shopping Experience?</h2>
+            <p>Join us today and discover the GRTRWJ difference.</p>
+            <a href="#">Get Started</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FIDDLE</p>
+        <p>Email: contact@grtrwj.com | Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
